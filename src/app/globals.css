@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f4f5f7;
+  --bg-strong: #eceef1;
+  --ink: #121417;
+  --muted: #6e737a;
+  --accent: #121417;
+  --accent-2: #1a1d21;
+  --accent-3: #24282d;
+  --card: #ffffff;
+  --border: rgba(15, 15, 16, 0.12);
+  --shadow: 0 12px 30px -24px rgba(0, 0, 0, 0.35);
+  --font-sans: 'Manrope', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.grid-surface {
+  background-image: linear-gradient(
+      to right,
+      rgba(15, 15, 16, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(15, 15, 16, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
